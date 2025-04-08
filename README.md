@@ -1,21 +1,27 @@
-# TCDAP/S
+# 短视频文本评论动态分析系统
+基于哔哩哔哩短视频文本评论分析
+本项目致力于构建一个面向Bilibili短视频平台的评论数据动态分析系统，利用前后端分离架构，实现对用户评论内容的采集、处理与可视化展示，帮助用户更全面地了解视频下观众的反馈、舆情趋势及潜在热点内容。
+# 技术栈
+前端：Vue3 + Element Plus + ECharts
+后端：Python Flask + Requests + SnowNLP
+# 功能支持
+哔哩哔哩扫码登录
+获取登录用户信息
+获取推荐视频
+根据关键词搜索视频
+获取视频详情
+播放视频
+下载视频
+查询视频评论
+查询视频全部评论
+#对视频文本评论进行可视化分析
+词云图
+性别分布
+评论趋势
+情感分析
+地区分布
+KMeans 聚类
+点赞排行
 
-# 文本评论动态分析系统/平台
-
-# 运行程序
-```
-python test.py
-```
-
-再运行Vue文件
-```
-npm run dev
-
-//or
-
-npm run serve
-
-```
-# dynamic analysis system for short video text comment.
-
-# Text Comment Dynamic Analysis Platform/System
+# 免责声明
+本项目仅供学术研究使用，所有数据均来自公开API，不涉及任何商业用途。如有任何问题，请联系作者删除。
