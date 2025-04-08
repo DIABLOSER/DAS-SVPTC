@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/src/assets/img/logo.png" alt="logo" width="200" height="200" />
+</div>
 # 🎬 短视频文本评论动态分析系统
 
 > 基于哔哩哔哩开放 API 的短视频评论情感与行为数据可视化平台
