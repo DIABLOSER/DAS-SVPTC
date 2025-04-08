@@ -56,20 +56,20 @@
 > 以下为系统各功能页面的展示图，包括首页、搜索、视频详情、用户中心及评论分析模块：
 
 <div align="center">
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_login.png" alt="登录页" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_home.png" alt="首页" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_search.png" alt="搜索页" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_video.png" alt="视频页" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_mine.png" alt="我的页面" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_about.png" alt="关于页" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_login.png" alt="登录页" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_home.png" alt="首页" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_search.png" alt="搜索页" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_video.png" alt="视频页" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_mine.png" alt="我的页面" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_about.png" alt="关于页" width="400"/>
   <br/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_analyse1.png" alt="可视化分析1" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_analyse12.png" alt="可视化分析2" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_analyse3.png" alt="可视化分析3" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_analyse4.png" alt="可视化分析4" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_analyse5.png" alt="可视化分析5" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_analyse6.png" alt="可视化分析6" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/raw/screenshot_analyse7.png" alt="可视化分析7" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse1.png" alt="可视化分析1" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse12.png" alt="可视化分析2" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse3.png" alt="可视化分析3" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse4.png" alt="可视化分析4" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse5.png" alt="可视化分析5" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse6.png" alt="可视化分析6" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse7.png" alt="可视化分析7" width="400"/>
 </div>
 
 ---
