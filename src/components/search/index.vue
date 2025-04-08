@@ -1,10 +1,9 @@
-<!-- 首页 -->
 <template>
   <div class="search-container">
     <div class="content" @scroll="handleScroll">
       <div class="video-grid">
-        <div v-for="(video, index) in  recommendedVideos " :key="index" class="video-item" @click="navigateToVideo(video.id)">
-          <img :src="`http://localhost:3000/api/proxy_image?url=${encodeURIComponent( video.pic)}`" :alt="video.title" class="video-thumbnail" />
+        <div v-for="(video, index) in  videoData" :key="index" class="video-item" @click="navigateToVideo(video.aid)">
+          <img :src="`http://localhost:3000/api/proxy_image?url=${encodeURIComponent(`http:` + video.pic)}`" :alt="video.title" class="video-thumbnail" />
           <h2>{{ video.title }}</h2>
         </div>
       </div>
@@ -17,18 +16,13 @@
 import axios from "axios";
 
 export default {
-  name: 'Home',
-  props: {
-    keyword: {
-      type: String,
-      default: ''
-    }
-  },
+  name: 'Search',
+  
   data() {
     return {
-      searchKeyword: this.keyword, // 从props中初始化搜索关键词
+      //this.$route.params.aid;
+      searchKeyword: this.$route.params.keyword, // 从props中初始化搜索关键词
       videoData: [], // 搜索结果数据
-      recommendedVideos: [], // 推荐视频数据
       loading: false,
       page: 1,
       hasMore: true
@@ -41,29 +35,29 @@ export default {
     }
   },
   methods: {
-    async fetchRecommendedVideos() {
+    async searchVideos() {
+      console.log("搜索关键词:", this.searchKeyword);
+      if(!this.loading){
+        // 不是加载更多-新搜索
+        this.videoData = []; // 清空搜索结果，展示推荐视频
+        this.page=1; // 重置页码
+      }
       try {
-        const mid = this.$store.getters.userInfo?.mid; // 从 Vuex store 中获取 mid
-        if (!mid) {
-          alert("用户信息获取失败，请重新登录");
-          return this.$router.push('/login');
-        }
-
-        const res = await axios.get("http://localhost:3000/api/recommended_videos", {
-          params: { mid: mid, pn: this.page, ps: 10 }, // 使用从 userInfo 中获取的 mid
+        const res = await axios.get("http://localhost:3000/api/search_videos", {
+          params: { keyword: this.searchKeyword, pn: this.page, ps: 10 },
           withCredentials: true,
           headers: {
             'Cookie': document.cookie  // 显式传递 Cookie
           }
         });
         if (res.data.code === 0) {
-          this.recommendedVideos = [...this.recommendedVideos, ...(res.data.data || [])];
-          this.hasMore = res.data.data.length > 0;
+          this.videoData = [...this.videoData, ...(res.data.data?.result || [])];
+          this.hasMore = res.data.data?.result.length > 0;
         } else {
-          alert(res.data.message || "获取推荐视频失败");
+          alert(res.data.message || "搜索视频失败");
         }
       } catch (error) {
-        alert("获取推荐视频时发生错误: " + error.message);
+        alert("搜索视频时发生错误"+error);
       } finally {
         this.loading = false;
       }
@@ -76,13 +70,12 @@ export default {
       if (scrollHeight - scrollTop <= clientHeight + 50 && !this.loading && this.hasMore) {
         this.loading = true;
         this.page += 1;
-        this.fetchRecommendedVideos();
-        
+        this.searchVideos();
       }
     }
   },
   created() {
-      this.fetchRecommendedVideos();
+      this.searchVideos();
   },
 };
 </script>
@@ -161,8 +154,6 @@ export default {
   text-overflow: ellipsis;
   font-weight: 500; /* 加粗字体 */
 }
-
-
 .loading-more {
   text-align: center;
   padding: 10px;

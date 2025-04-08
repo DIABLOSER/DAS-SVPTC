@@ -1,11 +1,20 @@
 @import './base.css';
 
-
 #app {
   height: 100vh; 
   width: 100%; 
+  padding: 0;
+  margin: 0;
   display: flex; 
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  background: linear-gradient(270deg, #fbc2eb, #a6c1ee, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: GradientBackground 15s ease infinite;
+}
+
+@keyframes GradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
