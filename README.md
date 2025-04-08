@@ -64,7 +64,7 @@
   <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_about.png" alt="关于页" width="400"/>
   <br/>
   <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse1.png" alt="可视化分析1" width="400"/>
-  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse12.png" alt="可视化分析2" width="400"/>
+  <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse2.png" alt="可视化分析2" width="400"/>
   <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse3.png" alt="可视化分析3" width="400"/>
   <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse4.png" alt="可视化分析4" width="400"/>
   <img src="https://github.com/DIABLOSER/DAS-SVPTC/blob/main/raw/screenshot_analyse5.png" alt="可视化分析5" width="400"/>
