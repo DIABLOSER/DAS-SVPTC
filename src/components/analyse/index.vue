@@ -130,7 +130,7 @@ export default {
           alert("请先登录！");
           return this.$router.push('/login');
         }
-
+        const startTime = Date.now(); // 记录请求开始时间
         const res = await axios.get("http://localhost:3000/api/all_video_comments", {
           params: { oid: videoId },
           withCredentials: true,
@@ -138,7 +138,9 @@ export default {
             'Cookie': document.cookie
           }
         });
-
+        const endTime = Date.now(); // 记录请求结束时间
+        const duration = endTime - startTime; // 计算耗时
+        console.log(`请求所有评论耗时: ${duration}ms`); // 输出耗时
         if (res.data.code === 0) {
           this.commentData = res.data.data?.replies || [];
           this.generateChart();
